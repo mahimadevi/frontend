@@ -1,0 +1,1 @@
+export const serverUrl = "https://backend-1n32.onrender.com"
