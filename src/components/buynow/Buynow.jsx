@@ -5,6 +5,8 @@ import Option from "./Option";
 import Subtotal from "./Subtotal";
 import Right from "./Right";
 import Empty from "./Empty";
+import { serverUrl } from "../../../helper/helper";
+
 
 const Buynow = () => {
   const [cartdata, setCartdata] = useState("");
