@@ -74,7 +74,7 @@ const Navbar = () => {
   // for logout
   const logoutuser = async () => {
     try {
-      const res2 = await fetch("http://localhost:3005/logout", {
+      const res2 = await fetch(`${serverUrl}/logout`, {
         method: "GET",
         headers: {
           Accept: "application/json",
