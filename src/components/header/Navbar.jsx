@@ -10,7 +10,6 @@ import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import LogoutIcon from "@mui/icons-material/Logout";
 import "react-toastify/dist/ReactToastify.css";
-import { makeStyles } from "@material-ui/core";
 import { Drawer, IconButton, List, ListItem } from "@mui/material";
 import { ToastContainer, toast } from "react-toastify";
 import MenuIcon from "@mui/icons-material/Menu";
