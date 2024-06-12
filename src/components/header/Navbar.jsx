@@ -16,6 +16,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Rightheader from "./Rightheader";
 import { getProducts } from "../redux/actions/action";
 import { useSelector, useDispatch } from "react-redux";
+import { serverUrl } from "../../../helper/helper";
 
 const Navbar = () => {
   const { account, setAccount } = useContext(Logincontext);
@@ -41,7 +42,7 @@ const Navbar = () => {
 
   const getdetailsvaliduser = async () => {
     try {
-      const res = await fetch("http://localhost:3005/validuser", {
+      const res = await fetch(`${serverUrl}/validuser`, {
         method: "GET",
         headers: {
           Accept: "application/json",
