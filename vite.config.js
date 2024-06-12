@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      external: ['@material-ui/core'],
+      external: /^@material-ui\/core(\/.*)?$/,
     },
   },
 });
