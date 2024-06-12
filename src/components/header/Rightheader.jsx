@@ -4,20 +4,24 @@ import Badge from "@mui/material/Badge";
 import { NavLink } from "react-router-dom";
 import { useContext, useState } from "react";
 import { Logincontext } from "../context/Contextprovider";
-import { makeStyles } from "@material-ui/core";
 import "./rightheader.css";
 import { Divider } from "@mui/material";
 import LogoutIcon from "@mui/icons-material/Logout";
+import styled from 'styled-components';
 
-const usestyle = makeStyles({
-  component: {
-    marginTop: 10,
-    marginRight: "-50px",
-    width: "300px",
-    padding: 50,
-    height: "300px",
-  },
-});
+
+
+
+const StyledComponent = styled.div`
+  margin-top: 10px;
+  margin-right: -50px;
+  width: 300px;
+  padding: 50px;
+  height: 300px;
+`;
+
+
+
 
 const Rightheader = ({ logclose, userlog }) => {
   const imgd = "/india.png";
