@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 import "./signup.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { serverUrl } from "../../../helper/helper";
 
 const SignUp = () => {
   const [udata, setUdata] = useState({
